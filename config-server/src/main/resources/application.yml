@@ -1,0 +1,10 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:./config_repo/eureka-server,file:./config_repo/zuul-server,file:./config_repo/zipkin-server,file:./config_repo/fs-auth-server,file:./config_repo/bs-auth-server

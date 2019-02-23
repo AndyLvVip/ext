@@ -1,0 +1,6 @@
+rootProject.name = 'ext'
+include 'eureka-server'
+include 'zuul-server'
+include 'config-server'
+include 'zipkin-server'
+
