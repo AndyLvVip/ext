@@ -20,3 +20,13 @@ logging:
   level:
     org:
       hibernate: debug
+auth-server:
+  client-id: fs-portal
+  client-secret: fs-portal$ecret
+  grant-types:
+    - refresh_token
+    - password
+    - client_credential
+  scopes:
+    - webclient
+    - mobileclient
