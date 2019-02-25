@@ -7,4 +7,17 @@ spring:
     config:
       server:
         native:
-          search-locations: file:./config_repo/eureka-server,file:./config_repo/zuul-server,file:./config_repo/zipkin-server,file:./config_repo/fs-auth-server,file:./config_repo/bs-auth-server
+          search-locations:
+            - file:./config_repo/eureka-server
+            - file:./config_repo/zuul-server
+            - file:./config_repo/zipkin-server
+            - file:./config_repo/fs-auth-server
+            - file:./config_repo/bs-auth-server
+        git:
+          uri: https://github.com/AndyLvVip/ext
+          search-paths:
+            - config_repo/bs-auth-server
+            - config_repo/fs-auth-server
+            - config_repo/eureka-server
+            - config_repo/zipkin-server
+            - config_repo/zuul-server
