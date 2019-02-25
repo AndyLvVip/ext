@@ -2,7 +2,7 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
-    <springProfile name="dev">
+    <springProfile name="!default">
         <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashAccessTcpSocketAppender">
             <destination>192.168.63.195:4567</destination>
             <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
