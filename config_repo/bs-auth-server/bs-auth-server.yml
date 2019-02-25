@@ -1,5 +1,5 @@
 server:
-  port: 8901
+  port: 7901
 eureka:
   instance:
     prefer-ip-address: true
@@ -16,6 +16,22 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/bs_auth
     username: andy
     password: password
+  cloud:
+    stream:
+      bindings:
+        input-change-phone:
+          group: input-change-phone
+          destination: bs-auth-change-phone
+          content-type: application/json
+        input-change-email:
+          group: input-change-email
+          destination: bs-auth-change-email
+          content-type: application/json
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 logging:
   level:
     org:

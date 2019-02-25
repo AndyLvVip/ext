@@ -16,6 +16,22 @@ spring:
     url: jdbc:mysql://192.168.63.195:3306/fs_auth
     username: uca
     password: password
+  cloud:
+    stream:
+      bindings:
+        input-change-phone:
+          group: input-change-phone
+          destination: fs-auth-change-phone
+          content-type: application/json
+        input-change-email:
+          group: input-change-email
+          destination: fs-auth-change-email
+          content-type: application/json
+  rabbitmq:
+    host: 192.168.63.195
+    port: 5672
+    username: guest
+    password: guest
 logging:
   level:
     org:
