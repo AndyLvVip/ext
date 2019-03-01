@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bs-zipkin-server
+  cloud:
+    config:
+      uri: http://127.0.0.1:9888
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: http://192.168.63.195:9888

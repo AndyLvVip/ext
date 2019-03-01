@@ -1,0 +1,21 @@
+server:
+  port: 9888
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:./config_repo/bs-auth-server
+            - file:./config_repo/bs-eureka-server
+            - file:./config_repo/bs-zuul-server
+            - file:./config_repo/bs-zipkin-server
+        git:
+          uri: https://github.com/AndyLvVip/ext
+          search-paths:
+            - config_repo/bs-auth-server
+            - config_repo/bs-eureka-server
+            - config_repo/bs-zuul-server
+            - config_repo/bs-zipkin-server

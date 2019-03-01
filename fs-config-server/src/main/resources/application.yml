@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:./config_repo/fs-auth-server
+            - file:./config_repo/fs-eureka-server
+            - file:./config_repo/fs-zuul-server
+            - file:./config_repo/fs-zipkin-server
+        git:
+          uri: https://github.com/AndyLvVip/ext
+          search-paths:
+            - config_repo/fs-auth-server
+            - config_repo/fs-eureka-server
+            - config_repo/fs-zuul-server
+            - config_repo/fs-zipkin-server
