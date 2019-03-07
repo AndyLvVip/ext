@@ -1,0 +1,14 @@
+server:
+  port: 8100
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+uca:
+  oauth2:
+    client:
+      id: frontstage
+      secret: front$tage$ecret
+      web-scope: webclient
+      mobile-scope: mobileclient
+      login-url: http://fs-zuul-server/fs-auth-server/oauth/token
