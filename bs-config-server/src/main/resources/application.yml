@@ -1,8 +1,6 @@
 server:
   port: 9888
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
