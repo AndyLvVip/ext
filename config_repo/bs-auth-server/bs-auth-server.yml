@@ -37,8 +37,8 @@ logging:
     org:
       hibernate: debug
 auth-server:
-  client-id: bs-portal
-  client-secret: bs-portal$ecret
+  client-id: backstage
+  client-secret: back$tage$ecret
   grant-types:
     - refresh_token
     - password

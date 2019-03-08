@@ -36,13 +36,3 @@ logging:
   level:
     org:
       hibernate: debug
-auth-server:
-  client-id: bs-portal
-  client-secret: bs-portal$ecret
-  grant-types:
-    - refresh_token
-    - password
-    - client_credential
-  scopes:
-    - webclient
-    - mobileclient
