@@ -19,8 +19,8 @@ uca:
       secret: back$tage$ecret
       token-url: http://bs-zuul-server/bs-auth-server/oauth/token
       web:
-        scope: webclient
+        name: webclient
         timeout: 3600 # 1 hour
       mobile:
-        scope: mobileclient
+        name: mobileclient
         timeout: 604800 # 1 week

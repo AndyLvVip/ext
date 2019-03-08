@@ -19,8 +19,8 @@ uca:
       secret: front$tage$ecret
       token-url: http://fs-zuul-server/fs-auth-server/oauth/token
       web:
-        scope: webclient
+        name: webclient
         timeout: 3600 # 1 hour
       mobile:
-        scope: mobileclient
+        name: mobileclient
         timeout: 604800 # 1 week
