@@ -9,3 +9,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://192.168.63.195:8761/eureka/
+uca:
+  oauth2:
+    client:
+      token-url: http://192.168.63.195:8555/fs-auth-server/oauth/token
