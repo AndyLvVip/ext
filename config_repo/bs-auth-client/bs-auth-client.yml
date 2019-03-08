@@ -1,5 +1,13 @@
 server:
   port: 9100
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9761/eureka/
 spring:
   redis:
     host: 127.0.0.1
@@ -9,6 +17,10 @@ uca:
     client:
       id: backstage
       secret: back$tage$ecret
-      web-scope: webclient
-      mobile-scope: mobileclient
-      login-url: http://bs-zuul-server/bs-auth-server/oauth/token
+      token-url: http://bs-zuul-server/bs-auth-server/oauth/token
+      web:
+        scope: webclient
+        timeout: 3600 # 1 hour
+      mobile:
+        scope: mobileclient
+        timeout: 604800 # 1 week

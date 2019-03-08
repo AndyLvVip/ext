@@ -7,7 +7,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://192.168.63.195:8761/eureka/
+      defaultZone: http://192.168.63.195:9761/eureka/
 spring:
   jpa:
     generate-ddl: false
