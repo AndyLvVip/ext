@@ -36,6 +36,8 @@ logging:
   level:
     org:
       hibernate: debug
+    io:
+      seata: debug
 auth-server:
   client-id: backstage
   client-secret: back$tage$ecret

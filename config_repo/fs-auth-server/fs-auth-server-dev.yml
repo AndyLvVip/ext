@@ -36,3 +36,5 @@ logging:
   level:
     org:
       hibernate: debug
+    io:
+      seata: debug
