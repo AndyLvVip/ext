@@ -23,3 +23,5 @@ spring:
     password: guest
 logstash:
   destination: 192.168.63.195:4567
+logging:
+  config: http://192.168.63.195:8888/fs-logback/default/master/logback-spring.xml

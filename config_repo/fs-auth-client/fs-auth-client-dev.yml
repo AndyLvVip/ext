@@ -7,3 +7,5 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://192.168.63.195:8761/eureka/
+logging:
+  config: http://192.168.63.195:8888/fs-logback/default/master/logback-spring.xml
