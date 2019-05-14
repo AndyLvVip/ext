@@ -15,8 +15,8 @@ subprojects {
     sourceCompatibility = 1.8
 
     repositories {
-        maven { url 'http://artifactory.ucacc.net:8081/artifactory/maven-center/' }
-        maven { url 'http://artifactory.ucacc.net:8081/artifactory/spring-io-milestone/' }
+        maven { url 'http://192.168.63.195:8081/artifactory/maven-center/' }
+        maven { url 'http://192.168.63.195:8081/artifactory/spring-io-milestone/' }
     }
 
     ext['springCloudVersion'] = 'Greenwich.SR1'
