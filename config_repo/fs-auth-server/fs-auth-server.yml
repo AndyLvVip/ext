@@ -33,6 +33,7 @@ spring:
     username: guest
     password: guest
 logging:
+  config: classpath:logback-lazy.xml
   level:
     org:
       hibernate: debug

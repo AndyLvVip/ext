@@ -21,11 +21,5 @@ spring:
     port: 5672
     username: guest
     password: guest
-logging:
-  level:
-    org:
-      hibernate: debug
-    io:
-      seata: debug
 logstash:
   destination: 192.168.63.195:4567
