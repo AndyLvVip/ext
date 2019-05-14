@@ -16,17 +16,6 @@ spring:
     url: jdbc:mysql://192.168.63.195:3306/bs_auth
     username: uca
     password: password
-  cloud:
-    stream:
-      bindings:
-        input-change-phone:
-          group: input-change-phone
-          destination: bs-auth-change-phone
-          content-type: application/json
-        input-change-email:
-          group: input-change-email
-          destination: bs-auth-change-email
-          content-type: application/json
   rabbitmq:
     host: 192.168.63.195
     port: 5672
@@ -38,3 +27,5 @@ logging:
       hibernate: debug
     io:
       seata: debug
+logstash:
+  destination: 192.168.63.195:4567
