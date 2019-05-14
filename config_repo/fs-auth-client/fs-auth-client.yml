@@ -26,3 +26,5 @@ uca:
       mobile:
         name: mobileclient
         timeout: 604800 #1 week
+logstash:
+  destination: 127.0.0.1:4567

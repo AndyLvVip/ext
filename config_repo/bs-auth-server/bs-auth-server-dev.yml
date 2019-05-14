@@ -22,6 +22,7 @@ spring:
     username: guest
     password: guest
 logging:
+  config: http://192.168.63.195:9888/bs-logback/default/master/logback-spring.xml
   level:
     org:
       hibernate: debug

@@ -12,6 +12,8 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
+logging:
+  config: http://127.0.0.1:9888/bs-logback/default/master/logback-spring.xml
 uca:
   oauth2:
     client:
@@ -24,3 +26,5 @@ uca:
       mobile:
         name: mobileclient
         timeout: 604800 # 1 week
+logstash:
+  destination: 127.0.0.1:4567
