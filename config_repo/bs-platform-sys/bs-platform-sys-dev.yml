@@ -11,3 +11,7 @@ logging:
   config: http://192.168.63.195:9888/bs-logback/default/master/logback-spring.xml
 logstash:
   destination: 192.168.63.195:4567
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://192.168.63.195:9901/user

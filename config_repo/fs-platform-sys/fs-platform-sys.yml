@@ -22,3 +22,10 @@ logging:
   config: http://127.0.0.1:8888/fs-logback/default/master/logback-spring.xml
 logstash:
   destination: 127.0.0.1:4567
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://127.0.0.1:8901/user
+    client:
+      grant-type: client_credentials
