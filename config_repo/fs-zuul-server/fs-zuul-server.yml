@@ -17,4 +17,3 @@ ribbon:
   ReadTimeout: 10000
 zuul:
   sensitive-headers: Cookie,Set-Cookie
-  ignore-security-headers: false
