@@ -17,3 +17,6 @@ ribbon:
   ReadTimeout: 10000
 zuul:
   sensitive-headers: Cookie,Set-Cookie,TX_XID,TX_LOCK
+logging:
+  level:
+    root: debug
