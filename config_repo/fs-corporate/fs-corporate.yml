@@ -26,6 +26,6 @@ logstash:
 security:
   oauth2:
     resource:
-      user-info-uri: http://127.0.0.1:8901/user
+      user-info-uri: http://fs-zuul-server/fs-auth-server/user
     client:
       grant-type: client_credentials

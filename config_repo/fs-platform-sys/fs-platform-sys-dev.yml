@@ -11,7 +11,3 @@ logging:
   config: http://192.168.63.195:8888/fs-logback/default/master/logback-spring.xml
 logstash:
   destination: 192.168.63.195:4567
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://192.168.63.195:8901/user
