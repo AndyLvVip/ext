@@ -16,4 +16,4 @@ management:
 ribbon:
   ReadTimeout: 10000
 zuul:
-  sensitive-headers: Cookie,Set-Cookie
+  sensitive-headers: Cookie,Set-Cookie,Authorization
