@@ -20,6 +20,11 @@ spring:
     sql-dialect: mysql
 logging:
   config: http://127.0.0.1:9888/bs-logback/default/master/logback-spring.xml
+  level:
+    org:
+      jooq: debug
+    io:
+      seata: debug
 logstash:
   destination: 127.0.0.1:4567
 security:
