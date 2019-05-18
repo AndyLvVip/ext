@@ -14,8 +14,6 @@ spring:
     username: andy
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
-    hikari:
-      transaction-isolation: TRANSACTION_READ_COMMITTED
   jooq:
     sql-dialect: mysql
 logging:
@@ -23,8 +21,6 @@ logging:
   level:
     org:
       jooq: debug
-    io:
-      seata: debug
 logstash:
   destination: 127.0.0.1:4567
 
