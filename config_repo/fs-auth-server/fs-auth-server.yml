@@ -13,7 +13,7 @@ spring:
     generate-ddl: false
     show-sql: true
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/fs_auth?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/fs_auth
     username: andy
     password: password
   cloud:
