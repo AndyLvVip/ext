@@ -13,7 +13,7 @@ spring:
     generate-ddl: false
     show-sql: true
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/bs_auth
+    url: jdbc:mysql://127.0.0.1:3357/bs_auth
     username: andy
     password: password
   cloud:
