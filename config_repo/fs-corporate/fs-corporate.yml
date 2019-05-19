@@ -13,7 +13,6 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/corporate?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: andy
     password: password
-    driver-class-name: com.mysql.cj.jdbc.Driver
   jooq:
     sql-dialect: mysql
 logging:
