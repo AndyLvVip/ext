@@ -1,0 +1,24 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.63.195:8761/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.63.195:3306/plat_file?allowMultiQueries=true
+    username: uca
+    password: password
+  redis:
+    host: 192.168.63.195
+    port: 6379
+  resources:
+    static-locations: file:${uca.fileserver.exposed-location}
+uca:
+  plat:
+    file:
+      url: http://192.168.63.195:8555/fs-plat-file
+      real-file-path: ${uca.fileserver.exposed-location}/media
+      exposed-location: /opt/uca/file
+logging:
+  config: http://192.168.63.195:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 192.168.63.195:4567
