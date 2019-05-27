@@ -11,13 +11,13 @@ spring:
     host: 192.168.63.195
     port: 6379
   resources:
-    static-locations: file:${uca.fileserver.exposed-location}
+    static-locations: file:${uca.plat.file.exposed-location}
 uca:
   plat:
     file:
       # 统一以前台的入口来对附件进行下载
       url: http://192.168.63.195:8555/fs-plat-file
-      real-file-path: ${uca.fileserver.exposed-location}/media
+      real-file-path: ${uca.plat.file.exposed-location}/media
       exposed-location: /opt/uca/file
 logging:
   config: http://192.168.63.195:9888/bs-logback/default/master/logback-spring.xml
