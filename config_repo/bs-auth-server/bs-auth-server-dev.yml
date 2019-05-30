@@ -23,10 +23,5 @@ spring:
     password: guest
 logging:
   config: http://192.168.63.195:9888/bs-logback/default/master/logback-spring.xml
-  level:
-    org:
-      hibernate: debug
-    io:
-      seata: debug
 logstash:
   destination: 192.168.63.195:4567
